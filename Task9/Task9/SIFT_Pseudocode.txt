@@ -1,0 +1,13 @@
+Revision 2 – Add SIFT:
+START
+1. Initialize webcam.
+2. Load reference image.
+3. Convert reference image to grayscale.
+4. Initialize SIFT.
+5. Extract keypoints and descriptors.
+6. Capture webcam frame.
+7. Extract SIFT features from frame.
+8. Match descriptors.
+9. Display matches.
+10. Stop webcam.
+END
