@@ -1,0 +1,9 @@
+Revision 1 – Basic Design:
+START
+1. Initialize webcam.
+2. Load reference image.
+3. Capture webcam frames.
+4. Compare frames with reference image.
+5. Display result.
+6. Stop webcam.
+END
