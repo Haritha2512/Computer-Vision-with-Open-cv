@@ -1,0 +1,45 @@
+Revision 3 – Final Pseudocode:
+START
+
+1. Initialize the webcam.
+
+2. Load the reference image of the object to be recognized.
+
+3. Convert the reference image to grayscale.
+
+4. Initialize the SIFT feature detector.
+
+5. Detect keypoints and compute SIFT descriptors
+   for the reference image.
+
+6. Initialize a feature matcher using the SIFT descriptors.
+
+7. Start capturing frames continuously from the webcam.
+
+8. FOR each captured webcam frame:
+      a. Convert the frame to grayscale.
+      b. Detect SIFT keypoints in the frame.
+      c. Compute SIFT descriptors for the frame.
+      d. Match the frame descriptors with the
+         reference-image descriptors.
+      e. Apply ratio test to remove weak matches.
+      f. Count the number of good matches.
+
+9. IF the number of good matches is greater than
+   the predefined threshold:
+      a. Identify the object as detected.
+      b. Display "Object Detected".
+      c. Draw matching feature points.
+
+10. ELSE:
+      a. Display "Object Not Detected".
+
+11. Display the processed webcam frame.
+
+12. Repeat Steps 8–11 until the user chooses to stop.
+
+13. Release the webcam.
+
+14. Close all display windows.
+
+END
